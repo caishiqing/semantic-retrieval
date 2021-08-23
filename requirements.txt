@@ -1,0 +1,5 @@
+elasticsearch==7.13.1
+transformers==4.8.2
+sentence_transformers==2.0.0
+fastapi==0.66.0
+uvicorn==0.14.0

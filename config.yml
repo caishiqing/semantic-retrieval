@@ -1,0 +1,25 @@
+elasticsearch:
+  cluster: [
+    "http://172.24.1.37:5601",
+    "172.24.1.38",
+    "172.24.1.39"
+  ]
+  index: material_basic_offline_qas
+  properties: [
+    product_nm,
+  ]
+  # 批处理大小
+  query_batch_size: 128
+  timeout: 30
+  max_retries: 10
+
+vearch:
+  master: http://172.17.6.119:8817
+  router: http://172.17.6.119:9001
+  db_name: text_semantic
+  
+model:
+  name: models/paraphrase-multilingual-mpnet-base-v2
+  # name: distiluse-base-multilingual-cased-v1
+  use_cuda: false
+  batch_size: 32
